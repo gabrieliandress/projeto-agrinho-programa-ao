@@ -1,0 +1,183 @@
+/* Definição da fonte Roboto */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff; /* Fundo branco */
+  color: #333333; /* Cor do texto principal */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff9800; /* Detalhe laranja */
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input[type="email"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ff9800; /* Detalhe laranja */
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff9800; /* Detalhe laranja */
+  color: #fff;
+  border: 1px solid #ff9800;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #e67e00; /* Cor laranja mais escura */
+  border-color: #e67e00;
+}
+
+.search-bar button span {
+  background-color: #e67e00; /* Cor laranja escura */
+  color: #ffffff; /* Cor do texto */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.about-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333333;
+  border: 1px solid #333333;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.about-button:hover {
+  background-color: #333333; /* Cor bem escura */
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #ff9800; /* Detalhe laranja */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+    width: 100%;
+    height: 300px; /* Define a altura da faixa */
+    background-image: url('imagem\ 1.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a área da faixa */
+    background-position: center; /* Centraliza a imagem na faixa */
+}
+
+footer {
+  background-color: #f0f0f0;
+  color: #333333;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.intro, .content {
+  margin-bottom: 40px;
+}
+
+.blue-text {
+  color: rgb(255, 115, 0);
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.blue-text:hover {
+  text-decoration: underline;
+}
+
+.green-box {
+  background-color: #d4edda;
+  border-left: 5px solid #e67e00;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Seção de Agradecimento */
+.thank-you {
+  background-color: #ff9800; /* Fundo laranja */
+  color: #ffffff; /* Texto branco */
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 5px solid #e67e00; /* Borda superior mais escura */
+}
+
+/* Estilos do Menu */
+.menu-icon {
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #ffffff;
+}
+
+nav.menu {
+  background-color: #ff9800; /* Detalhe laranja */
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu ul li {
+  border-bottom: 1px solid #e67e00;
+}
+
+nav.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav.menu ul li a:hover {
+  background-color: #e67e00;
+}

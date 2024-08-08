@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho: Do Campo à Cidade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+  <header>
+    <h1>AGRO RURAL</h1>
+    <div class="search-bar">
+      <input type="email" id="email-search" placeholder="Pesquise o email...">
+      <button type="button" onclick="pesquisarEmail()"><span>Pesquisar</span></button>
+    </div>
+    <button class="about-button" onclick="toggleAbout()">Sobre Nós</button>
+
+    <!-- Ícone do Menu -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      &#9776;
+    </div>
+    <nav class="menu hidden">
+      <ul>
+        <li><a href="#help">Ajuda</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li><a href="#about">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="intro">
+      <p>O AGRO RURAL conecta crianças e jovens às origens rurais e à vida na cidade, promovendo uma compreensão abrangente e sustentável da agricultura e do desenvolvimento urbano. Por meio de diversas atividades educativas, o programa incentiva os participantes a explorar e valorizar a importância da agricultura, não apenas como fonte de alimento, mas também como pilar fundamental para a economia e a preservação ambiental. Além disso, Agrinho destaca como o desenvolvimento urbano pode ser harmoniosamente integrado com práticas agrícolas sustentáveis, criando uma ponte entre o campo e a cidade. Dessa forma, o programa busca formar uma nova geração de cidadãos conscientes e engajados com os desafios e oportunidades de um mundo mais sustentável e equilibrado.</p>
+      <p><a href="#" class="blue-text">Conexão com as Origens Rurais</a></p>
+      <p><a href="#" class="blue-text">Compreensão da Vida na Cidade</a></p>
+      <p><a href="#" class="blue-text">Educação Sustentável em Agricultura</a></p>
+      <img src="imagem 2.jpeg" alt="Descrição da Imagem">
+    </section>
+    
+    <section class="content">
+      <h2>O Campo</h2>
+      <div class="green-box">
+        <p>A agricultura desempenha um papel fundamental em nossas vidas, impactando não apenas a alimentação, mas também a economia, a saúde e o meio ambiente. Estudantes que aprendem sobre a importância da agricultura desenvolvem uma compreensão profunda de como essa atividade é essencial para o bem-estar da sociedade.</p>
+        <p><span class="blue-text">1. Fonte de Alimentos:</span></p>
+        <p>A agricultura é a principal fonte de alimentos para a população mundial. Ela fornece uma variedade de produtos, incluindo grãos, frutas, legumes, carnes e laticínios, que são essenciais para uma dieta balanceada e saudável. Sem a agricultura, seria impossível sustentar a crescente população global.</p>
+        <p><span class="blue-text">2. Desenvolvimento Econômico:</span></p>
+        <p>A agricultura é um dos pilares da economia em muitos países, especialmente nas regiões rurais. Ela gera empregos, não apenas para agricultores, mas também para trabalhadores em setores relacionados, como transporte, processamento de alimentos e comércio. Além disso, a exportação de produtos agrícolas pode ser uma importante fonte de receita para muitos países.</p>
+        <p><span class="blue-text">3. Sustentabilidade e Meio Ambiente:</span></p>
+        <p>A prática da agricultura sustentável é crucial para a preservação do meio ambiente. Métodos agrícolas responsáveis podem ajudar a conservar os recursos naturais, como a água e o solo, e a proteger a biodiversidade. Estudantes aprendem sobre técnicas como rotação de culturas, agricultura orgânica e o uso eficiente da água, que são essenciais para garantir a saúde do planeta para as futuras gerações.</p>
+        <p><span class="blue-text">4. Saúde e Nutrição:</span></p>
+        <p>A agricultura está diretamente ligada à saúde e à nutrição. A produção de alimentos nutritivos e acessíveis é vital para combater a fome e a desnutrição. Estudantes aprendem sobre a importância de uma dieta equilibrada e como diferentes alimentos contribuem para o crescimento e desenvolvimento saudáveis.</p>
+      </div>
+      
+      <h2>À Cidade</h2>
+      <p>Através de visitas e atividades urbanas, os participantes compreendem como a cidade e o campo estão interconectados. Eles observam de perto a logística de transporte e distribuição de alimentos, o funcionamento dos mercados e a importância da agricultura urbana. Essas experiências práticas evidenciam a interdependência entre a vida urbana e rural, mostrando como a produção agrícola sustenta a vida nas cidades.</p>
+    </section>
+
+    <section id="about" class="about hidden">
+      <h2>Sobre Nós</h2>
+      <p>Este site foi criado para destacar o impacto da conexão das áreas rurais com a cidade, que visa conectar crianças e jovens às suas origens rurais e urbanas. Eu sou o AGRO RURAL, e sou apaixonado por promover a educação e a compreensão entre diferentes modos de vida. Com mais de 40 anos de experiência na área, estou comprometido em fazer a diferença na vida das pessoas através da educação e da conscientização.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 AGRO RURAL. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Seção de Agradecimento -->
+  <div class="thank-you">
+    <p>Obrigado por visitar nosso site! Se tiver alguma dúvida, entre em contato conosco pelo número: (44) 99134-5678.</p>
+  </div>
+  
+  <script>
+    function pesquisarEmail() {
+      var email = document.getElementById('email-search').value;
+      if (email) {
+        alert('Você pesquisou pelo email: ' + email);
+        // Aqui você pode adicionar a lógica para buscar o email no seu sistema
+      } else {
+        alert('Por favor, insira um email para pesquisar.');
+      }
+    }
+
+    function toggleAbout() {
+      var aboutSection = document.getElementById('about');
+      if (aboutSection.classList.contains('hidden')) {
+        aboutSection.classList.remove('hidden');
+      } else {
+        aboutSection.classList.add('hidden');
+      }
+    }
+
+    function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
